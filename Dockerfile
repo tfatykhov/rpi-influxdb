@@ -21,7 +21,7 @@ COPY influxdb.conf /etc/influxdb/influxdb.conf
 ADD run.sh /run.sh
 RUN chmod +x /*.sh
 
-ENV PRE_CREATE_DB **None**
+ENV PRE_CREATE_DB wnr_log
 
 # HTTP API
 EXPOSE 8086
